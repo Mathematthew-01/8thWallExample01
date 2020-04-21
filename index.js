@@ -5,7 +5,7 @@
 const placegroundScenePipelineModule = () => {
   const modelFile = 'safeZone.gltf'                                 // 3D model to spawn at tap
   const startScale = new THREE.Vector3(0.5, 0.5, 0.5) // Initial scale value for our model
-  const endScale = new THREE.Vector3(1.0, 1.0, 1.0)      // Ending scale value for our model
+  const endScale = new THREE.Vector3(2.0, 2.0, 2.0)      // Ending scale value for our model
   const animationMillis = 750                                  // Animate over 0.75 seconds
 
   const raycaster = new THREE.Raycaster()
