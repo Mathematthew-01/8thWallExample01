@@ -4,8 +4,8 @@
 // handles subsequent spawning of a glb model whenever the scene is tapped.
 const placegroundScenePipelineModule = () => {
   const modelFile = 'safeZone.gltf'                                 // 3D model to spawn at tap
-  const startScale = new THREE.Vector3(0.5, 0.5, 0.5) // Initial scale value for our model
-  const endScale = new THREE.Vector3(3.0, 3.0, 3.0)      // Ending scale value for our model
+  const startScale = new THREE.Vector3(2.5, 2.5, 2.5) // Initial scale value for our model
+  const endScale = new THREE.Vector3(3.6, 3.6, 3.6)      // Ending scale value for our model
   const animationMillis = 750                                  // Animate over 0.75 seconds
 
   const raycaster = new THREE.Raycaster()
