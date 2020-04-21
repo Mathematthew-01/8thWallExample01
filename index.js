@@ -4,8 +4,8 @@
 // handles subsequent spawning of a glb model whenever the scene is tapped.
 const placegroundScenePipelineModule = () => {
   const modelFile = 'jellyfish-model.glb'                                 // 3D model to spawn at tap
-  const startScale = new THREE.Vector3(0.0001, 0.0001, 0.0001) // Initial scale value for our model
-  const endScale = new THREE.Vector3(0.002, 0.002, 0.002)      // Ending scale value for our model
+  const startScale = new THREE.Vector3(0.5, 0.5, 0.5) // Initial scale value for our model
+  const endScale = new THREE.Vector3(1.0, 1.0, 1.0)      // Ending scale value for our model
   const animationMillis = 750                                  // Animate over 0.75 seconds
 
   const raycaster = new THREE.Raycaster()
