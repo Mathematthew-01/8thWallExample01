@@ -3,7 +3,7 @@
 // Returns a pipeline module that initializes the threejs scene when the camera feed starts, and
 // handles subsequent spawning of a glb model whenever the scene is tapped.
 const placegroundScenePipelineModule = () => {
-  const modelFile = 'safeZone.glb'                                 // 3D model to spawn at tap
+  const modelFile = 'safeZone.gtlf'                                 // 3D model to spawn at tap
   const startScale = new THREE.Vector3(2.5, 2.5, 2.5) // Initial scale value for our model
   const endScale = new THREE.Vector3(3.6, 3.6, 3.6)      // Ending scale value for our model
   const animationMillis = 750                                  // Animate over 0.75 seconds
