@@ -54,7 +54,6 @@ const placegroundScenePipelineModule = () => {
       .onUpdate(() => { model.scene.scale.set(scale.x, scale.y, scale.z) })
       .start() // Start the tween immediately.
 
-      console.log('model added!')
   }
 
   // Load the glb model at the requested point on the surface.
@@ -63,6 +62,7 @@ const placegroundScenePipelineModule = () => {
     loader.load(
       modelFile,                                                              // resource URL.
       (gltf) => { animateIn(gltf, pointX, pointZ, Math.random() * 360) },     // loaded handler.
+      (png) => { animateIn(png, pointX, pointZ, Math.random() * 360) },      // loaded handler.
       (xhr) => {console.log(`${(xhr.loaded / xhr.total * 100 )}% loaded`)},   // progress handler.
       (error) => {console.log('An error happened')}                           // error handler.
     )
